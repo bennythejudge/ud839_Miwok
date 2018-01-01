@@ -40,30 +40,22 @@ public class NumbersActivity extends AppCompatActivity {
 
         // Create a list of words
         ArrayList<Word> words = new ArrayList<Word>();
-        for (int x=0; x<2000; x++) {
-            String s1 = generateRandomHexToken(16);
-            String s2 = generateRandomHexToken(16);
-            words.add(new Word(s1, s2));
-        }
-        /*
-        words.add("one");
-        words.add("two");
-        words.add("three");
-        words.add("four");
-        words.add("five");
-        words.add("six");
-        words.add("seven");
-        words.add("eight");
-        words.add("nine");
-        words.add("ten");
-        words.add("ten");
-        words.add("ten");
-        words.add("ten");
-        words.add("ten");
-        words.add("ten");
-        words.add("ten");
-        words.add("ten");
-        */
+//        for (int x=0; x<2000; x++) {
+//            String s1 = generateRandomHexToken(16);
+//            String s2 = generateRandomHexToken(16);
+//            words.add(new Word(s1, s2));
+//        }
+        words.add(new Word("lutti", "one"));
+        words.add(new Word("otiiko", "two"));
+        words.add(new Word("tolookosu", "three"));
+        words.add(new Word("oyyisa", "four"));
+        words.add(new Word("massokka", "five"));
+        words.add(new Word("temmokka", "six"));
+        words.add(new Word("kenekaku", "seven"));
+        words.add(new Word("kawinta", "eight"));
+        words.add(new Word("wo'e", "nine"));
+        words.add(new Word("na'aacha", "ten"));
+
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
         // simple_list_item_1.xml layout resource defined in the Android framework.
