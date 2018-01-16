@@ -18,16 +18,16 @@ public class FamilyActivity extends AppCompatActivity {
 
         // Create a list of words
         ArrayList<Word> families = new ArrayList<Word>();
-        families.add(new Word("әpә", "father"));
-        families.add(new Word("әṭa", "mother"));
-        families.add(new Word("angsi", "son"));
-        families.add(new Word("tune", "daughter"));
-        families.add(new Word("taachi", "older brother"));
-        families.add(new Word("chalitti", "younger brother"));
-        families.add(new Word("teṭe", "older sister"));
-        families.add(new Word("kolliti", "younger sister"));
-        families.add(new Word("ama", "grandmother"));
-        families.add(new Word("paapa", "grandfather"));
+        families.add(new Word("әpә", "father", R.drawable.family_father));
+        families.add(new Word("әṭa", "mother", R.drawable.family_mother));
+        families.add(new Word("angsi", "son", R.drawable.family_son));
+        families.add(new Word("tune", "daughter", R.drawable.family_daughter));
+        families.add(new Word("taachi", "older brother", R.drawable.family_older_brother));
+        families.add(new Word("chalitti", "younger brother", R.drawable.family_younger_brother));
+        families.add(new Word("teṭe", "older sister", R.drawable.family_older_sister));
+        families.add(new Word("kolliti", "younger sister", R.drawable.family_younger_sister));
+        families.add(new Word("ama", "grandmother", R.drawable.family_grandmother));
+        families.add(new Word("paapa", "grandfather", R.drawable.family_grandfather));
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
