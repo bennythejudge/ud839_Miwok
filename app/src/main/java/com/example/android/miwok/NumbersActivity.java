@@ -87,6 +87,7 @@ public class NumbersActivity extends AppCompatActivity {
         // activity_numbers.xml layout file.
         ListView listView = (ListView) findViewById(R.id.list);
 
+        // play word sound when the list item is clicked
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
