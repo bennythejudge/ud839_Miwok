@@ -8,6 +8,7 @@ public class Word {
     private String mDefaultTranslation;
     private String mMiwokiTranslation;
     private int mWordImageId = -1;
+    private int mWordSoundId = -1;
 
     // here we have two constructors
     // one takes 2 arguments when the image is not needed
@@ -24,6 +25,13 @@ public class Word {
         mWordImageId = drawableId;
     }
 
+    public Word(String miwoki_translation, String default_translation, int drawableId, int soundId) {
+        mDefaultTranslation = default_translation;
+        mMiwokiTranslation = miwoki_translation;
+        mWordImageId = drawableId;
+        mWordSoundId = soundId;
+    }
+
     public String getMiwoki() {
         return mMiwokiTranslation;
     }
@@ -35,4 +43,9 @@ public class Word {
     public int getWordImage() { return mWordImageId; }
 
     public boolean hasImage() { return mWordImageId != -1; }
+
+    public boolean hasSound() { return mWordSoundId != -1; }
+
+    public int getWordSound() { return mWordSoundId; }
+
 }
