@@ -48,4 +48,13 @@ public class Word {
 
     public int getWordSound() { return mWordSoundId; }
 
+    @Override
+    public String toString() {
+        return "Word{" +
+                "mDefaultTranslation='" + mDefaultTranslation + '\'' +
+                ", mMiwokiTranslation='" + mMiwokiTranslation + '\'' +
+                ", mWordImageId=" + mWordImageId +
+                ", mWordSoundId=" + mWordSoundId +
+                '}';
+    }
 }

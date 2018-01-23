@@ -117,6 +117,13 @@ public class NumbersActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     mediaPlayer.start(); // no need to call prepare(); create() does that for you
+                    mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                        public void onCompletion(MediaPlayer mp) {
+//                            Toast.makeText(getApplicationContext(), "I'm done!", Toast.LENGTH_SHORT).show();
+                            mediaPlayer.release();
+                            mediaPlayer = null;
+                        }
+                    });
                 } else {
                     Toast.makeText(getApplicationContext(),
                             "Sound file not found", Toast.LENGTH_SHORT).show();
