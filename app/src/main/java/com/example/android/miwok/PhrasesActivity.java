@@ -35,11 +35,13 @@ public class PhrasesActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer = null;
 
-    public static String generateRandomHexToken(int byteLength) {
-        SecureRandom secureRandom = new SecureRandom();
-        byte[] token = new byte[byteLength];
-        secureRandom.nextBytes(token);
-        return new BigInteger(1, token).toString(16); //hex encoding
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (mediaPlayer != null) {
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
     }
 
     @Override
@@ -126,8 +128,6 @@ public class PhrasesActivity extends AppCompatActivity {
                 }
             }
         });
-
-
 
         // Make the {@link ListView} use the {@link ArrayAdapter} we created above, so that the
         // {@link ListView} will display list items for each word in the list of words.
