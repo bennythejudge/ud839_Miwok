@@ -101,7 +101,7 @@ public class ColorsActivity extends AppCompatActivity {
                             "after creating mediaplayer");
                     mediaPlayer.reset();
                     AssetFileDescriptor sound =
-                            getResources().openRawResourceFd(words.get(i).getWordSound());
+                            getResources().openRawResourceFd(words.get(i).getAudioResourceId());
                     Log.v("setOnItemClickListener", "sound: " + String.valueOf(sound));
                     try {
                         mediaPlayer.setDataSource(

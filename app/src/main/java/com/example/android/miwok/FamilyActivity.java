@@ -89,7 +89,7 @@ public class FamilyActivity extends AppCompatActivity {
                             "after creating mediaplayer");
                     mediaPlayer.reset();
                     AssetFileDescriptor sound =
-                            getResources().openRawResourceFd(families.get(i).getWordSound());
+                            getResources().openRawResourceFd(families.get(i).getAudioResourceId());
                     Log.v("setOnItemClickListener", "sound: " + String.valueOf(sound));
                     try {
                         mediaPlayer.setDataSource(

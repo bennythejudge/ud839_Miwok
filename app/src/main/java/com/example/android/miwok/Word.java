@@ -46,7 +46,7 @@ public class Word {
 
     public boolean hasSound() { return mWordSoundId != -1; }
 
-    public int getWordSound() { return mWordSoundId; }
+    public int getAudioResourceId() { return mWordSoundId; }
 
     @Override
     public String toString() {
