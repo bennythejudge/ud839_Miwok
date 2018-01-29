@@ -50,7 +50,7 @@ public class NumbersActivity extends AppCompatActivity {
         @Override
         public void onAudioFocusChange(int focusChange) {
             if (focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT ||
-                    focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
+                focusChange == AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK) {
                 // The AUDIOFOCUS_LOSS_TRANSIENT case means that we've lost audio focus for a
                 // short amount of time. The AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK case means that
                 // our app is allowed to continue playing sound but at a lower volume. We'll treat
